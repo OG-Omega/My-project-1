@@ -1,0 +1,104 @@
+
+.main {
+  width: 90%;
+  max-width: 900px;
+  margin: 100px auto;
+  text-align: center;
+  font-size: 24px;
+  font: lato;
+  font-family: monospace;
+}
+
+.background {
+  background-color: #306de6;
+}
+
+.text {
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form button:hover {
+  background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form input {
+    margin: 10px 0;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: stretch;
+    text-align:center;
+  }
+}
+
+.multi {
+  width: 100%;
+  height: 400px;
+  background-image:
+      url(https://mdn.mozillademos.org/files/11307/bubbles.png),
+      linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+  background-repeat: no-repeat,
+      no-repeat,
+      no-repeat;
+  background-position: bottom right,
+      left,
+      right;
+}
+
+.StripeElement {
+  height: 40px;
+  padding: 10px 12px;
+  width: 100%;
+  color: #32325d;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
